@@ -143,7 +143,7 @@ public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
 
 
     /**
-     * 令牌访问端点配置
+     * 令牌访问端点配置(授权码模式需要)
      *
      * @param dataSource 数据源
      * @return {@link AuthorizationCodeServices}

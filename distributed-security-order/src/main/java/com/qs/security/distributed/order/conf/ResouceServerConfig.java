@@ -55,7 +55,7 @@ public class ResouceServerConfig extends ResourceServerConfigurerAdapter {
     public void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                // 如果scope的授权范围不是all，那么就不让它访问
+                // 如果scope的授权范围不是ROLE_ADMIN，那么就不让它访问
                 .antMatchers("/**").access("#oauth2.hasScope('ROLE_ADMIN')")
                 .and().csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
