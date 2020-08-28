@@ -124,9 +124,9 @@ public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
         service.setTokenEnhancer(tokenEnhancerChain);
 
         // 令牌默认有效期2小时
-        service.setAccessTokenValiditySeconds(7200);
-        // 刷新令牌默认有效期3天
-        service.setRefreshTokenValiditySeconds(259200);
+//        service.setAccessTokenValiditySeconds(7200);
+//        // 刷新令牌默认有效期3天
+//        service.setRefreshTokenValiditySeconds(259200);
         return service;
     }
 
